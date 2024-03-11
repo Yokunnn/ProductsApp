@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text" parent="TextAppearance.AppCompat"/>
+
+    <style name="Text.Roboto">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Roboto.ItemTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Roboto.ItemDescription">
+        <item name="android:textSize">14sp</item>
+        <item name="color">@color/grey</item>
+    </style>
+</resources>
