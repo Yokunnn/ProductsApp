@@ -2,4 +2,7 @@
     <string name="app_name">ProductsApp</string>
     <string name="title_filler">Odio euismod lacinia</string>
     <string name="description_filler">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="loading_message">Loading…</string>
+    <string name="error_message">Something went wrong. Can\'t load.</string>
+    <string name="success_message">Loaded successfully</string>
 </resources>

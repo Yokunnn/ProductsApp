@@ -36,7 +36,7 @@ class ProductsAdapter : RecyclerView.Adapter<ProductsAdapter.ProductViewHolder>(
     }
 
     fun update(data: MutableList<Product>) {
-        items = data
-        notifyDataSetChanged()
+        items.addAll(data)
+        notifyItemRangeInserted(items.size - 1, data.size)
     }
 }

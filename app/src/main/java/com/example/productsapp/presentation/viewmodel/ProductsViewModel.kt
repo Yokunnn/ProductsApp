@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.productsapp.data.ProductsRepositoryImpl
 import com.example.productsapp.domain.model.Product
+import com.example.productsapp.utils.AppConstants
 import com.vsu.newser.utils.LoadState
 import com.vsu.newser.utils.Request
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -21,7 +22,7 @@ class ProductsViewModel @Inject constructor(
 
     fun getProducts(skip: Int) {
         viewModelScope.launch(Dispatchers.IO) {
-            productsRepository.getProducts(skip, 20).collect { requestState ->
+            productsRepository.getProducts(skip, AppConstants.PRODUCTS_LIMIT).collect { requestState ->
                 when (requestState) {
                     is Request.Error -> {
                         productsLoadState.postValue(LoadState.ERROR)
